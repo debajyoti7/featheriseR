@@ -5,7 +5,7 @@ Authors@R: person("Debajyoti", "Nag", email = "dave0908@gmail.com", role = c("au
 Description: A wrapper for easily converting files to feather format. It takes an input with a specified format and outputs a fether ile for the same.
 Depends:
     R (>= 3.3.0)
-License: What license is it under?
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1.9000
