@@ -1,8 +1,8 @@
 Package: featheriseR
-Title: What the Package Does (one line, title case)
+Title: A wrapper for easily converting files to feather format.
 Version: 0.0.0.9000
 Authors@R: person("Debajyoti", "Nag", email = "dave0908@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: A wrapper for easily converting files to feather format. It takes an input with a specified format and outputs a fether ile for the same.
 Depends:
     R (>= 3.3.0)
 License: What license is it under?
