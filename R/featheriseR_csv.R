@@ -14,6 +14,8 @@ featheriseR_csv <- function(ip){
   if(length(new.packages)) install.packages(new.packages)
   if(length(new.packages)) devtools::use_package(new.packages)
   
+  library(list.of.packages, character.only = TRUE)
+  
   #if(!library(feather)){devtools::use_package("feather")}
   #if(!(library(magrittr))){devtools::use_package("magrittr")}
 
