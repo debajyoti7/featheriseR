@@ -4,7 +4,7 @@
 
 Simple wrapper for converting input files to feather format.
 
-Currently defaults to csv inputs.
+Currently supports csv, xls and xlsx inputs.
 
 
 ## Install
