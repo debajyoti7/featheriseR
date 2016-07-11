@@ -1,15 +1,16 @@
 #' A featheriseR Function
 #'
 #' This function allows you to convert files to feather format.
-#' @param input file, csv with headers.
-#' @keywords feather, csv
+#' @param input file, xls with headers.
+#' @param input sheet number.
+#' @keywords feather, xls
 #' @export
 #' @examples
 #' featheriseR_function()
 
-featheriseR_csv <- function(ip){
+featheriseR_xls <- function(ip,sheet.num){
 
-  list.of.packages <- c("feather","magrittr")
+  list.of.packages <- c("feather","magrittr","gdata")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages)
   if(length(new.packages)) devtools::use_package(new.packages)
@@ -22,7 +23,7 @@ featheriseR_csv <- function(ip){
   op <- gsub(".csv", "", ip) %>%
     paste0(".feather")
 
-  read.csv(file=ip, header=TRUE, sep=",") %>%
+  read.xls(file=ip, sheet=sheet.num, header=TRUE) %>%
     as.data.frame() %>%
     write_feather(op)
 }
