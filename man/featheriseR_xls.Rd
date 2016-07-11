@@ -4,12 +4,12 @@
 \alias{featheriseR_xls}
 \title{A featheriseR Function}
 \usage{
-featheriseR_xls(ip, sheet.num)
+featheriseR_xls(ip, sheet.name)
 }
 \arguments{
 \item{input}{file, xls with headers.}
 
-\item{input}{sheet number.}
+\item{input}{sheet name.}
 }
 \description{
 This function allows you to convert files to feather format.
