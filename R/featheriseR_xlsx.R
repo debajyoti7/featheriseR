@@ -23,7 +23,7 @@ featheriseR_xlsx <- function(ip,sheet.name){
   op <- gsub(".csv", "", ip) %>%
     paste0(".feather")
 
-  read.xlsx(file=ip, sheetName=sheet.num, header=TRUE) %>%
+  read.xlsx(file=ip, sheetName=sheet.name, header=TRUE) %>%
     as.data.frame() %>%
     write_feather(op)
 }
