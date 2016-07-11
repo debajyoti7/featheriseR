@@ -17,10 +17,12 @@ featheriseR_xlsx <- function(ip,sheet.name){
 
   lapply(list.of.packages, require, character.only = TRUE)
 
-  #if(!library(feather)){devtools::use_package("feather")}
-  #if(!(library(magrittr))){devtools::use_package("magrittr")}
-
-  op <- gsub(".csv", "", ip) %>%
+  if(! file_ext(ip)=="xlsx" ){
+    stop("Invalid input type. Please provide a xlsx.")
+  }
+  
+  
+  op <- gsub(".xlsx", "", ip) %>%
     paste0(".feather")
 
   read.xlsx(file=ip, sheetName=sheet.name, header=TRUE) %>%

@@ -10,20 +10,21 @@
 
 featheriseR_xls <- function(ip,sheet.name){
 
-  list.of.packages <- c("feather","magrittr","gdata")
+  list.of.packages <- c("feather","magrittr","xlsx")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) install.packages(new.packages)
   if(length(new.packages)) devtools::use_package(new.packages)
 
   lapply(list.of.packages, require, character.only = TRUE)
 
-  #if(!library(feather)){devtools::use_package("feather")}
-  #if(!(library(magrittr))){devtools::use_package("magrittr")}
-
-  op <- gsub(".csv", "", ip) %>%
+  if(! file_ext(ip)=="xls" ){
+    stop("Invalid input type. Please provide a xls.")
+  }
+  
+  op <- gsub(".xls", "", ip) %>%
     paste0(".feather")
 
-  read.xls(file=ip, sheet=sheet.name, header=TRUE) %>%
+  read.xlsx(file=ip, sheet=sheet.name, header=TRUE) %>%
     as.data.frame() %>%
     write_feather(op)
 }
