@@ -4,8 +4,6 @@
 #' @param input file, csv with headers.
 #' @keywords feather, csv
 #' @export
-#' @examples
-#' featheriseR_function()
 
 featheriseR_csv <- function(ip){
 

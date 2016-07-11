@@ -5,8 +5,6 @@
 #' @param input sheet name.
 #' @keywords feather, xls
 #' @export
-#' @examples
-#' featheriseR_function()
 
 featheriseR_xls <- function(ip,sheet.name){
 
@@ -20,7 +18,7 @@ featheriseR_xls <- function(ip,sheet.name){
   if(! file_ext(ip)=="xls" ){
     stop("Invalid input type. Please provide a xls.")
   }
-  
+
   op <- gsub(".xls", "", ip) %>%
     paste0(".feather")
 

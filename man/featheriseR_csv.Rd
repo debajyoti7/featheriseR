@@ -12,9 +12,6 @@ featheriseR_csv(ip)
 \description{
 This function allows you to convert files to feather format.
 }
-\examples{
-featheriseR_function()
-}
 \keyword{csv}
 \keyword{feather,}
 

@@ -14,9 +14,6 @@ featheriseR_xls(ip, sheet.name)
 \description{
 This function allows you to convert files to feather format.
 }
-\examples{
-featheriseR_function()
-}
 \keyword{feather,}
 \keyword{xls}
 
