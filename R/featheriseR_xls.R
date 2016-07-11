@@ -24,7 +24,7 @@ featheriseR_xls <- function(ip,sheet.name){
   op <- gsub(".xls", "", ip) %>%
     paste0(".feather")
 
-  read.xlsx(file=ip, sheet=sheet.name, header=TRUE) %>%
+  read.xlsx(file=ip, sheetName = sheet.name, header=TRUE) %>%
     as.data.frame() %>%
     write_feather(op)
 }
