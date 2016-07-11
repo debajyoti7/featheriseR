@@ -11,3 +11,4 @@ LazyData: true
 RoxygenNote: 5.0.1.9000
 Imports: feather,
     magrittr
+Suggests: testthat
