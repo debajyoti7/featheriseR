@@ -1,8 +1,8 @@
 #' A featheriseR Function
 #'
 #' This function allows you to convert files to feather format.
-#' @param input file, xlsx with headers.
-#' @param input sheet name.
+#' @param ip input file, xlsx with headers.
+#' @param sheet.name input sheet name.
 #' @keywords feather, xlsx
 #' @export
 

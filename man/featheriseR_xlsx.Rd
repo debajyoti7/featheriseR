@@ -7,9 +7,9 @@
 featheriseR_xlsx(ip, sheet.name)
 }
 \arguments{
-\item{input}{file, xlsx with headers.}
+\item{ip}{input file, xlsx with headers.}
 
-\item{input}{sheet name.}
+\item{sheet.name}{input sheet name.}
 }
 \description{
 This function allows you to convert files to feather format.

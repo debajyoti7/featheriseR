@@ -1,7 +1,7 @@
 #' A featheriseR Function
 #'
 #' This function allows you to convert files to feather format.
-#' @param input file, csv with headers.
+#' @param ip input file
 #' @keywords feather, csv
 #' @export
 

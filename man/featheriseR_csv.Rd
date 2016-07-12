@@ -7,7 +7,7 @@
 featheriseR_csv(ip)
 }
 \arguments{
-\item{input}{file, csv with headers.}
+\item{ip}{input file}
 }
 \description{
 This function allows you to convert files to feather format.
