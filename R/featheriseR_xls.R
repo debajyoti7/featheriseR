@@ -6,7 +6,11 @@
 #' @keywords feather, xls
 #' @export
 #' @return Outputs a feather file to the same path as input
+<<<<<<< HEAD
 #' @examples featheriseR_xls(system.file("examples", "applicants2.xls", package = "featheriseR"))
+=======
+#' @examples featheriseR_csv(system.file("examples", "applicants2.xls", package = "featheriseR"))
+>>>>>>> 315b13b54bbe25722644e1beaaf2c254a9dcd945
 
 
 featheriseR_xls <- function(ip,sheet.name){
