@@ -1,9 +1,11 @@
 #' A featheriseR Function
 #'
-#' This function allows you to convert files to feather format.
+#' This function allows you to convert a csv file to feather format.
 #' @param ip input file
 #' @keywords feather, csv
 #' @export
+#' @return Outputs a feather file to the same path as input
+#' @examples featheriseR_csv(system.file("examples", "applicants.csv", package = "featheriseR"))
 
 featheriseR_csv <- function(ip){
 

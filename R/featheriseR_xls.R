@@ -1,10 +1,13 @@
 #' A featheriseR Function
 #'
-#' This function allows you to convert files to feather format.
+#' This function allows you to convert an xls file to feather format.
 #' @param ip input file, xls with headers.
 #' @param sheet.name input sheet name.
 #' @keywords feather, xls
 #' @export
+#' @return Outputs a feather file to the same path as input
+#' @examples featheriseR_csv(system.file("examples", "applicants.xls", package = "featheriseR"))
+
 
 featheriseR_xls <- function(ip,sheet.name){
 

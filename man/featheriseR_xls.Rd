@@ -11,8 +11,14 @@ featheriseR_xls(ip, sheet.name)
 
 \item{sheet.name}{input sheet name.}
 }
+\value{
+Outputs a feather file to the same path as input
+}
 \description{
-This function allows you to convert files to feather format.
+This function allows you to convert an xls file to feather format.
+}
+\examples{
+featheriseR_csv(system.file("examples", "applicants.xls", package = "featheriseR"))
 }
 \keyword{feather,}
 \keyword{xls}

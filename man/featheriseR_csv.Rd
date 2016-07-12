@@ -9,8 +9,14 @@ featheriseR_csv(ip)
 \arguments{
 \item{ip}{input file}
 }
+\value{
+Outputs a feather file to the same path as input
+}
 \description{
-This function allows you to convert files to feather format.
+This function allows you to convert a csv file to feather format.
+}
+\examples{
+featheriseR_csv(system.file("examples", "applicants.csv", package = "featheriseR"))
 }
 \keyword{csv}
 \keyword{feather,}
