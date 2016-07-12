@@ -5,7 +5,7 @@
 #' @keywords feather, csv
 #' @export
 #' @return Outputs a feather file to the same path as input
-#' @examples featheriseR_csv(system.file("examples", "applicants.csv", package = "featheriseR"))
+#' @examples featheriseR_csv(system.file("examples", "applicants1.csv", package = "featheriseR"))
 
 featheriseR_csv <- function(ip){
 
