@@ -8,10 +8,11 @@
 #' @importFrom tools file_ext
 #' @import utils
 #' @import devtools
-#' @export
 #' @return Outputs a feather file to the same path as input
-#' @examples featheriseR_csv(system.file("examples", "applicants1.csv", package = "featheriseR"))
-
+#' @examples
+#' featheriseR_csv(system.file("examples", "applicants1.csv",
+#' package = "featheriseR"))
+#' @export
 featheriseR_csv <- function(ip){
 
   list.of.packages <- c("devtools", "feather", "magrittr", "utils", "tools")
