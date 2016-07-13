@@ -3,6 +3,7 @@
 export(featheriseR_csv)
 export(featheriseR_xls)
 export(featheriseR_xlsx)
+import(utils)
 importFrom(feather,write_feather)
 importFrom(magrittr,"%>%")
 importFrom(tools,file_ext)

@@ -6,16 +6,21 @@
 #' @importFrom feather write_feather
 #' @importFrom magrittr %>%
 #' @importFrom tools file_ext
+#' @import utils
 #' @export
 #' @return Outputs a feather file to the same path as input
 #' @examples featheriseR_csv(system.file("examples", "applicants1.csv", package = "featheriseR"))
 
 featheriseR_csv <- function(ip){
 
-  list.of.packages <- c("feather","magrittr", "tools")
+  list.of.packages <- c("feather", "magrittr", "utils", "tools")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-  if(length(new.packages)) install.packages(new.packages)
-  if(length(new.packages)) devtools::use_package(new.packages)
+  if(length(new.packages)) {
+    install.packages(new.packages)
+    }
+  if(length(new.packages)) {
+    devtools::use_package(new.packages)
+    }
 
   lapply(list.of.packages, devtools::use_package)
 
