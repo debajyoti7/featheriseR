@@ -20,7 +20,7 @@ featheriseR_xlsx <- function(ip,sheet.name){
   if(length(new.packages)) install.packages(new.packages)
   if(length(new.packages)) devtools::use_package(new.packages)
 
-  lapply(list.of.packages, require, character.only = TRUE)
+  lapply(list.of.packages, devtools::use_package)
 
   if(! file_ext(ip)=="xlsx" ){
     stop("Invalid input type. Please provide a xlsx.")

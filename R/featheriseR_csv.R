@@ -17,10 +17,7 @@ featheriseR_csv <- function(ip){
   if(length(new.packages)) install.packages(new.packages)
   if(length(new.packages)) devtools::use_package(new.packages)
 
-  lapply(list.of.packages, require, character.only = TRUE)
-
-  #if(!library(feather)){devtools::use_package("feather")}
-  #if(!(library(magrittr))){devtools::use_package("magrittr")}
+  lapply(list.of.packages, devtools::use_package)
 
   if(! file_ext(ip)=="csv" ){
     stop("Invalid input type. Please provide a csv.")
