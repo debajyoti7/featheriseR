@@ -12,5 +12,7 @@ RoxygenNote: 5.0.1.9000
 Imports: feather,
     magrittr,
     xlsx,
-    tools
+    tools,
+    devtools,
+    utils
 Suggests: testthat
