@@ -10,8 +10,7 @@
 #' @import devtools
 #' @return Outputs a feather file to the same path as input
 #' @examples
-#' featheriseR_csv(system.file("examples", "applicants1.csv",
-#' package = "featheriseR"))
+#' featheriseR_csv(system.file("examples", "applicants1.csv", package = "featheriseR"))
 #' @export
 featheriseR_csv <- function(ip){
 

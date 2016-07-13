@@ -19,7 +19,7 @@ This function allows you to convert an xlsx file to feather format.
 }
 \examples{
 featheriseR_xlsx(system.file("examples", "applicants.xlsx",
-package = "featheriseR"), sheetName = 'applicants')
+package = "featheriseR"), sheet.name = "applicants")
 }
 \keyword{feather}
 \keyword{xlsx}

@@ -13,7 +13,7 @@
 #' @return Outputs a feather file to the same path as input
 #' @examples
 #' featheriseR_xls(system.file("examples", "applicants2.xls",
-#' package = "featheriseR"), sheetName = 'applicants')
+#' package = "featheriseR"), sheet.name = "applicants")
 #' @export
 featheriseR_xls <- function(ip,sheet.name){
 
