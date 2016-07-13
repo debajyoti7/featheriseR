@@ -3,6 +3,9 @@
 #' This function allows you to convert a csv file to feather format.
 #' @param ip input file
 #' @keywords feather, csv
+#' @importFrom feather write_feather
+#' @importFrom magrittr %>%
+#' @importFrom tools file_ext
 #' @export
 #' @return Outputs a feather file to the same path as input
 #' @examples featheriseR_csv(system.file("examples", "applicants1.csv", package = "featheriseR"))
