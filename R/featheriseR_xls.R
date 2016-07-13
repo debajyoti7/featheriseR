@@ -9,6 +9,7 @@
 #' @importFrom tools file_ext
 #' @importFrom xlsx read.xlsx
 #' @import utils
+#' @import devtools
 #' @export
 #' @return Outputs a feather file to the same path as input
 #' @examples featheriseR_xls(system.file("examples", "applicants2.xls", package = "featheriseR"))
@@ -16,7 +17,7 @@
 
 featheriseR_xls <- function(ip,sheet.name){
 
-  list.of.packages <- c("feather", "magrittr", "tools", "utils", "xlsx")
+  list.of.packages <- c("devtools", "feather", "magrittr", "tools", "utils", "xlsx")
   new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
   if(length(new.packages)) {
     install.packages(new.packages)
