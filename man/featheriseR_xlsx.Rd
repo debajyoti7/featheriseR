@@ -21,6 +21,6 @@ This function allows you to convert an xlsx file to feather format.
 featheriseR_xlsx(system.file("examples", "applicants.xlsx",
 package = "featheriseR"), sheetName = 'applicants')
 }
-\keyword{feather,}
+\keyword{feather}
 \keyword{xlsx}
 

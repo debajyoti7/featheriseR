@@ -2,7 +2,7 @@
 #'
 #' This function allows you to convert a csv file to feather format.
 #' @param ip input file
-#' @keywords feather, csv
+#' @keywords feather csv
 #' @importFrom feather write_feather
 #' @importFrom magrittr %>%
 #' @importFrom tools file_ext

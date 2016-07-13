@@ -3,7 +3,7 @@
 #' This function allows you to convert an xls file to feather format.
 #' @param ip input file, xls with headers.
 #' @param sheet.name input sheet name.
-#' @keywords feather, xls
+#' @keywords feather xls
 #' @importFrom feather write_feather
 #' @importFrom magrittr %>%
 #' @importFrom tools file_ext

@@ -20,5 +20,5 @@ featheriseR_csv(system.file("examples", "applicants1.csv",
 package = "featheriseR"))
 }
 \keyword{csv}
-\keyword{feather,}
+\keyword{feather}
 
