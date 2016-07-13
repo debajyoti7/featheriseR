@@ -18,7 +18,7 @@ Outputs a feather file to the same path as input
 This function allows you to convert an xlsx file to feather format.
 }
 \examples{
-featheriseR_xlsx(system.file("examples", "applicants.xlsx", package = "featheriseR"))
+featheriseR_xlsx(system.file("examples", "applicants.xlsx", package = "featheriseR"), sheetName = 'applicants')
 }
 \keyword{feather,}
 \keyword{xlsx}

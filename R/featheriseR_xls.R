@@ -12,7 +12,7 @@
 #' @import devtools
 #' @export
 #' @return Outputs a feather file to the same path as input
-#' @examples featheriseR_xls(system.file("examples", "applicants2.xls", package = "featheriseR"))
+#' @examples featheriseR_xls(system.file("examples", "applicants2.xls", package = "featheriseR"), sheetName = 'applicants')
 
 
 featheriseR_xls <- function(ip,sheet.name){
