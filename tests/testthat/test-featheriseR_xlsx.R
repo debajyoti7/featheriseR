@@ -10,4 +10,11 @@ test_that("number of records in input and output data is same", {
                                         package = "featheriseR"),
                              sheetName = 'applicants')))
 
+  expect_equal(colnames(featheriseR_xlsx(system.file("examples", "applicants.xlsx",
+                                                package = "featheriseR"),
+                                    sheet.name = 'applicants')),
+               colnames(read.xlsx(system.file("examples", "applicants.xlsx",
+                                         package = "featheriseR"),
+                             sheetName = 'applicants')))
+
 })
