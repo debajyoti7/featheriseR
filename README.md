@@ -1,6 +1,8 @@
 
 [![Build Status](https://travis-ci.org/debajyoti7/featheriseR.svg?branch=master)](https://travis-ci.org/debajyoti7/featheriseR)
 
+[![codecov.io](https://codecov.io/github/debajyoti7/featheriseR/coverage.svg?branch=master)](https://codecov.io/github/debajyoti7/featheriseR?branch=master)
+
 # featheriseR
 
 Simple wrapper for converting input files to feather format.
