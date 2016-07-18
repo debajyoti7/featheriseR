@@ -18,3 +18,17 @@ test_that("number of records in input and output data is same", {
                              sheetName = 'applicants')))
 
 })
+
+
+test_that("invalid inputs raises error",{
+
+  expect_that(featheriseR_xls(system.file("examples", "applicants2.csv",
+                                          package = "featheriseR"),
+                              sheet.name = 'applicants'),
+              throws_error())
+
+  expect_that(featheriseR_xls(system.file("examples", "applicants2.xlsx",
+                                          package = "featheriseR"),
+                              sheet.name = 'applicants'),
+              throws_error())
+})
