@@ -12,8 +12,9 @@ addons:
       - gcc-4.9
       - g++-4.9
 
-    r_github_packages:
-      - jimhester/covr
+
+r_github_packages:
+  - jimhester/covr
 
 before_install: |
   mkdir ~/.R
