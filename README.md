@@ -15,7 +15,7 @@ Currently supports csv, xls and xlsx inputs.
 with `devtools`:
 
 ```S
-devtools:install_github('debajyoti7/featheriseR')
+devtools::install_github('debajyoti7/featheriseR')
 ```
 
 ## Use
